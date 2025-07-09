@@ -1,11 +1,12 @@
-export const NAME = 'Muhammad Osama Javaid';
+export const NAME = 'Yassine Zadod';
 
-export const DESIGNATION = `MERN Stack Developer | Open Source Contributor | Tech Blogger`;
+export const DESIGNATION = `Software Engineer | Java & React Developer | AI Trainer`;
 
 export const DETAILS = {
-  Residence: 'Pakistan',
-  City: 'Peshawar',
-  Age: '23',
+  Residence: 'Morocco',
+  City: 'Agadir',
+  Education: 'MSc in Software Eng',
+
 };
 
 export const SKILLS = [
@@ -14,54 +15,90 @@ export const SKILLS = [
     level: '75%',
   },
   {
-    title: 'React Developer',
-    level: '91%',
-  },
-  // {
-  //   title: 'Desktop Application Developer',
-  //   level: '75%',
-  // },
-  {
-    title: 'Backend Developer',
-    level: '54%',
+    title: 'Java & Spring Boot Developer',
+    level: '75%',
   },
   {
-    title: 'Technical Blogger',
-    level: '83%',
+    title: 'Frontend Developer (React.js / Angular / Next.js)',
+    level: '85%',
+  },
+  {
+    title: 'Backend Developer (Spring Boot / Express / Laravel)',
+    level: '70%',
+  },
+  {
+    title: 'Database Management (MySQL / PostgreSQL / MongoDB)',
+    level: '75%',
+  },
+    {
+    title: 'Mobile Developer (Flutter / React Native)',
+    level: '60%',
+  },
+  {
+    title: 'Version Control (Git & GitHub)',
+    level: '75%',
+  },
+  {
+    title: 'DevOps Tools (Docker, maven, cloud)',
+    level: '30%',
   },
 ];
 
 export const TECH_STACK = [
+  // Languages
   'JavaScript',
-  'ReactJS',
-  'NextJS',
   'TypeScript',
-  'NodeJS',
-  'Redux',
-  'Zustand',
+  'Java',
+  'SQL',
+
+  // Frontend Frameworks & Libraries
+  'ReactJS',
+  'Angular',
+  'NextJS',
+
+  // Mobile Development
+  'Flutter',
+  'React Native',
+
+  // Styling & UI Libraries
   'CSS',
-  'SCSS',
   'TailwindCSS',
-  'Ant Design',
+  'Bootstrap',
   'Material UI',
-  'Next UI',
+  'Ant Design',
+
+  // Backend & API
+  'NodeJS',
+  'ExpressJS',
+  'Spring Boot',
+  'Symfony',
   'REST API',
-  'MongoDB',
+
+  // Databases
   'MySQL',
+  'PostgreSQL',
+  'MongoDB',
+
+  // Tools & DevOps
   'Git',
   'GitHub',
+  'Docker',
+
+  // Project Management & Design
   'Jira',
   'Figma',
-  'Adobe XD',
+
+  // Others
+  'Agile Methodology',
+  'Cloud Basics',
 ];
 
+
 export const CONTACTS = {
-  EMAIL: 'iosamajavaid@gmail.com',
-  PHONE: '+923159591822',
+  EMAIL: 'yassinezadod@gmail.com',
+  PHONE: '(+212) 622 277 134',
 };
 export const SOCIAL_LINKS = {
-  GITHUB: 'https://github.com/osamajavaid',
-  LINKEDIN: 'https://www.linkedin.com/in/iosamajavaid/',
-  TWITTER: 'https://twitter.com/iosamajavaid',
-  FACEBOOK: 'https://www.facebook.com/iosamajavaid',
+  GITHUB: 'https://github.com/yassinezadod',
+  LINKEDIN: 'https://linkedin.com/in/yassine-zadod',
 };

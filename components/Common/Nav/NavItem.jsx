@@ -1,20 +1,37 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 import React from 'react'
 
-
 const NavItem = ({ NavIcon, NavText, NavRoute, setIsOpen }) => {
-    const router = useRouter();
-    const className = router.asPath === `${NavRoute}` ? "rounded-xl !text-DeepNightBlack bg-Green font-bold tracking-widest" : '';
+    const router = useRouter()
+    const isActive = router.asPath === NavRoute
+
+    // Translation mapping for nav items
+    const getTranslatedText = (text) => {
+        const translations = {
+            'Home': 'home',
+            'Career & Education': 'background',
+            'My Projects': 'portfolio',
+            'Contact': 'contact'
+        }
+        return translations[text] || text
+    }
 
     return (
         <Link
-            onClick={(e) => setIsOpen(false)}
             href={NavRoute}
-            className={`${className} transition flex items-center px-2 hover:bg-EveningBlack text-SilverGray hover:text-SilverGray rounded-xl  py-1.5 font-semibold space-x-4 text-base`}
+            onClick={() => setIsOpen(false)}
+            className={`
+                flex items-center gap-x-3 px-4 py-3 rounded-lg 
+                transition-all duration-300 cursor-pointer
+                text-sm font-medium tracking-wide
+                ${isActive
+                    ? 'bg-Green text-DeepNightBlack shadow-[0_0_12px_#1fdf64] font-bold'
+                    : 'text-white hover:bg-white/10 hover:text-Green'}
+            `}
         >
-            {NavIcon}
-            <span>{NavText}</span>
+            <span className="text-xl">{NavIcon}</span>
+            <span>{getTranslatedText(NavText)}</span>
         </Link>
     )
 }

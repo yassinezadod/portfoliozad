@@ -1,6 +1,8 @@
 import LinearBar from './LinearBar';
 import { SKILLS } from '../../../constants/constants';
+
 const Skills = () => {
+  
   return (
     <div className='flex flex-col space-y-1 pt-6'>
       <div className='flex flex-col gap-y-4'>
